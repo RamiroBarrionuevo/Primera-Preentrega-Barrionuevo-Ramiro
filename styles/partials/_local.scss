@@ -1,0 +1,119 @@
+.contenedor3{
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    grid-template-rows: 94px 100px 300px 300px 100px;
+    grid-template-areas: 
+    "local1 local1 local1"
+    "local2 local2 local2"
+    "local3 local3 local3"
+    "local4 local4 local4"
+    "local5 local5 local5";
+    .local1{
+        grid-area: local1;
+        font-size: 20px;  
+    }
+    .local2{
+        grid-area: local2;
+        display: flex;
+        justify-content: center;
+        
+        h1{
+            font-size: 30px;
+            color: orange;
+            
+            
+        }
+    }
+    .local3{
+        grid-area: local3;
+        display: flex;
+        justify-content: space-around;
+        .local__imagen1{
+            width: max-content;
+            height: 228px;
+            border-radius: 5px;
+        }
+        .local__imagen2{
+            width: max-content;
+            height: 228px;
+            border-radius: 5px;
+        }
+        .local__imagen3{
+            width: max-content;
+            height: 228px;
+            border-radius: 5px;
+        }
+
+        
+    }
+    .local4{
+        grid-area: local4;
+        display: flex;
+        justify-content: space-around;
+        .local__imagen4{
+            width: max-content;
+            height: 228px;
+            border-radius: 5px;
+        }
+        .local__imagen5{
+            width: max-content;
+            height: 228px;
+            border-radius: 5px;
+        }
+        .local__imagen6{
+            width: max-content;
+            height: 228px;
+            border-radius: 5px;
+        }
+
+    }
+    .local5{
+        grid-area: local5;
+        
+
+    }
+    
+}
+@mixin tamaños ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+.local_imagen1{
+    @include tamaños(230px, 230px,)
+}
+.local_imagen2{
+    @include tamaños(230px, 230px)
+}
+.local_imagen3{
+    @include tamaños(230px, 230px)
+}
+.local_imagen4{
+    @include tamaños(230px, 230px)
+}
+.local_imagen5{
+    @include tamaños(230px, 230px)
+}
+.local_imagen6{
+    @include tamaños(230px, 230px)
+}
+@mixin radius ($radius){
+    border-radius: $radius;
+}
+.local_imagen1{
+    @include radius(10px)
+}
+.local_imagen2{
+    @include radius(10px)
+}
+.local_imagen3{
+    @include radius(10px)
+}
+.local_imagen4{
+    @include radius(10px)
+}
+.local_imagen5{
+    @include radius(10px)
+}
+.local_imagen6{
+    @include radius(10px)
+}

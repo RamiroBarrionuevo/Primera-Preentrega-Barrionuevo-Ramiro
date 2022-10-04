@@ -1,0 +1,97 @@
+@media screen and ( max-width: 480px) {
+.contenedor{
+        display: flex;
+        flex-direction: column;
+        .caja5{
+            .pie-pagina{
+                .grupo-1{
+                    width: 90%;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 30px;
+                    padding: 35px 0px;
+                }
+            }
+        }
+        .caja3{
+            
+            .video{
+                width: 100%;
+            }
+        }
+    }
+
+.contenedor2{
+        display: flex;
+        flex-direction: column;
+        .cajas2{
+            .cards-wrapperd{
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 500px;
+                }
+            }
+        }
+        .cajas3{
+            .pie-pagina{
+                .grupo-1{
+                    width: 90%;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 30px;
+                    padding: 35px 0px;
+                }
+            }
+        }
+    }
+.contenedor3{
+    display: flex;
+    flex-direction: column;
+    .local2{
+        h1{
+           text-align: center; 
+        }
+    }
+    .local3{
+        flex-direction: column;
+        grid-gap: 30px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .local4{
+        flex-direction: column;
+        grid-gap: 30px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .local5{
+        .pie-pagina{
+            .grupo-1{
+                width: 90%;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 30px;
+                padding: 35px 0px;
+            }
+        }
+    }
+}
+.pie-pagina{
+    .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+main{
+    form{
+        .infomensaje{
+            textarea{
+                width: 400px;
+            }
+        }
+    }
+}
+
+}

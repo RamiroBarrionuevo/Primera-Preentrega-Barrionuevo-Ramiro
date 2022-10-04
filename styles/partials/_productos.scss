@@ -1,0 +1,52 @@
+
+.contenedor2{
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: 94px 210vh;
+        grid-template-areas:
+        "cajas1  cajas1"
+        "cajas2  cajas2"
+        "cajas3  cajas3"
+        ;
+        .cajas1{
+            grid-area: cajas1;
+            font-size: 20px;
+        }
+    
+        .cajas2{
+            grid-area: cajas2;
+
+        
+            h2{
+                color: orange;
+                text-align:center;
+            }
+            .cards-wrapperd{
+                display: flex;
+               justify-content: center;
+               justify-items: center;
+               justify-content: space-around;
+               border-radius: 20px;
+               .card{
+                margin: 0 .5em;
+                width: calc(100%/5);
+                border-radius: 20px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                .card-body{
+                    background-color: rgb(255, 195, 146);
+                    border-radius: 5px;
+                    text-align: center;
+                   
+                }
+            }
+            
+               
+               
+            }}
+            .cajas3{
+                grid-area: cajas3;
+               
+                
+            }
+}

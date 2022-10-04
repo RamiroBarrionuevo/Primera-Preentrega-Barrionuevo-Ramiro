@@ -1,0 +1,39 @@
+header{
+    font-size: 20px;
+}
+main{
+    form{
+        border: 3px solid orange ;
+        font-weight: 700;
+        text-align: center;
+        color: orange;
+        
+    }
+    h2{
+        text-align: center;
+        color: orange;
+        margin-top: 20px;
+        
+        
+    }
+    fieldset{
+        .infocontacto{
+            text-align: center;
+            
+        }
+        .infomensaje{
+            text-align: center;
+        }
+        .buttom{
+            text-align: center;
+            transition: 300ms ease;
+            background-color: white;
+        }
+        .buttom:hover{
+            color: orange;
+        }
+    }
+    .ubicacion{
+        text-align: center;
+    }
+}
