@@ -2,7 +2,7 @@
 .contenedor{
         display: flex;
         flex-direction: column;
-        .caja5{
+        .caja4{
             .pie-pagina{
                 .grupo-1{
                     width: 90%;
@@ -12,27 +12,68 @@
                 }
             }
         }
+        .caja1{
+            margin-top: 10px;
+        }
+        .caja2{
+            margin-top: 0px;
+            .video{
+                width: 100%;  
+            }
+            p{
+                margin-right: 0px;
+            }
+        }
         .caja3{
             
-            .video{
-                width: 100%;
+            width: 95%;
+            .cartas{
+                flex-direction: column;
+                
+                .cartitas{
+                    width: 75vw;
+                    height: 70vh;
+                    
+                    .flip{
+                        .flip__back{
+                            p{
+                                width: 75vw;
+                                height: 70vh;
+                            }
+                        }
+                    }
+                    
+                }
             }
+            
         }
     }
 
 .contenedor2{
         display: flex;
         flex-direction: column;
-        .cajas2{
+        .cajas1{
+            
             .cards-wrapperd{
+                
                 .card{
                     display: flex;
                     flex-direction: column;
-                    width: 500px;
+                    height: 100%;
+                    width: 100%;
+                    .card-body{
+                        width: 100%;
+                        .card-text{
+                            height: 100%;
+                            width: 23vw;
+                            
+                        }
+                    }
+                    
                 }
             }
         }
-        .cajas3{
+        .cajas2{
             .pie-pagina{
                 .grupo-1{
                     width: 90%;
@@ -46,26 +87,29 @@
 .contenedor3{
     display: flex;
     flex-direction: column;
-    .local2{
+    row-gap: 50px;
+    .local1{
         h1{
-           text-align: center; 
+            text-align: center; 
+        }
+    }
+    .local2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .local__imagen1,.local__imagen2,.local__imagen3{
+            margin-bottom: 80px;
         }
     }
     .local3{
         flex-direction: column;
-        grid-gap: 30px;
-        margin-bottom: 30px;
         justify-content: center;
         align-items: center;
+        .local__imagen4,.local__imagen5,.local__imagen6{
+            margin-bottom: 80px;
+        }
     }
     .local4{
-        flex-direction: column;
-        grid-gap: 30px;
-        margin-bottom: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-    .local5{
         .pie-pagina{
             .grupo-1{
                 width: 90%;

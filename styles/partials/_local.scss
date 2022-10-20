@@ -1,31 +1,38 @@
+header{
+    font-size: 20px;
+    .navbar-dark {
+        --bs-navbar-color: rgb(255, 255, 255);
+        --bs-navbar-hover-color: rgba(0, 0, 0, 0.75);
+        --bs-navbar-active-color: rgb(0, 0, 0);
+        box-shadow: rgba(163, 133, 87, 0.25) 0px 30px 60px -12px inset,
+                    rgba(90, 90, 90, 0.3) 0px 18px 36px -18px inset;
+    }
+}
 .contenedor3{
     display: grid;
-    grid-template-columns: 500px 1fr 1fr;
-    grid-template-rows: 94px 100px 300px 300px 100px;
+    grid-template-columns: .5fr .5fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr .2.5fr;
     grid-template-areas: 
     "local1 local1 local1"
     "local2 local2 local2"
     "local3 local3 local3"
-    "local4 local4 local4"
-    "local5 local5 local5";
+    "local4 local4 local4";
+    row-gap: 100px;
     .local1{
         grid-area: local1;
-        font-size: 20px;  
-    }
-    .local2{
-        grid-area: local2;
         display: flex;
         justify-content: center;
         
         h1{
+            margin-top: 50px;
             font-size: 30px;
             color: orange;
             
             
         }
     }
-    .local3{
-        grid-area: local3;
+    .local2{
+        grid-area: local2;
         display: flex;
         justify-content: space-around;
         .local__imagen1{
@@ -46,8 +53,8 @@
 
         
     }
-    .local4{
-        grid-area: local4;
+    .local3{
+        grid-area: local3;
         display: flex;
         justify-content: space-around;
         .local__imagen4{
@@ -67,8 +74,8 @@
         }
 
     }
-    .local5{
-        grid-area: local5;
+    .local4{
+        grid-area: local4;
         
 
     }
