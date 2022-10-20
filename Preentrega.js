@@ -67,6 +67,11 @@ while (opcion != "no"){
             Carrito.Hamburguesas.push(American);
             Carrito.Totalcompra = Calculartotal(Carrito.Hamburguesas);
             alert("El costo de tu producto es: $" + American.precio + "\nIngredientes:\n"+CrearlistaNombres(American.Ingredientes)+Carrito.Totalcompra);
+            opcion = prompt("Deseas añadir ingredentes? (si o no) ")
+            if(opcion === "si"){
+                prompt(CrearlistaNombres(listadeIngredientes))
+            }
+
             break;
         case "Mcforno":
             alert("El costo de tu producto es: " + Mcforno.precio +"\nIngredientes:\n"+CrearlistaNombres(Mcforno.Ingredientes));
@@ -99,3 +104,7 @@ function CrearlistaNombres(arreglo){
     }
     return lista;
 }
+function ModificarHamburguesa(){
+    opcion = prompt("Desea modoficar su hamburguesa")
+}
+
