@@ -1,3 +1,4 @@
+
 //clase Ingrediente
 class Ingrediente{
     constructor(nombre,precio){
@@ -107,4 +108,5 @@ function CrearlistaNombres(arreglo){
 function ModificarHamburguesa(){
     opcion = prompt("Desea modoficar su hamburguesa")
 }
+
 
